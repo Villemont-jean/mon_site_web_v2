@@ -1,0 +1,141 @@
+footer { background-color: rgba(200, 200, 200, 0.58); }
+
+/*	Séparateur de Footer  */
+footer #sepfoot {
+	position: relative;
+	top: -4px;
+	width: 100%;
+	margin: auto;
+}
+
+footer #sepfoot img {
+	width: 100%;
+	height: auto;
+}
+
+footer #footup {
+	position: relative;
+	top: -18px;
+	width: 54px;
+	height: 30px;
+	margin: auto;
+}
+
+/*	Mis en Page des div Footer */
+footer #tweet,
+footer #photos,
+footer #friends {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+
+footer h1 {
+    font-family: 'Dayrom', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+footer .decal { margin-left: 1em; }
+
+/*	les Miniatures  */
+footer .footshow { display: none; }
+
+footer .photofooter {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 1em;
+	width: 20%;
+	border: 2px solid rgba(0, 0, 0, 0);
+}
+
+footer .photofooter img {
+	width: 100%;
+	height: auto;
+}
+
+footer .photofooter a { display: block; }
+
+footer .photofooter a:hover { border: 2px solid green; }
+
+/*	La liste d'Amis  */
+footer #friends ul {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 1em;
+}
+
+footer #friends li { list-style-image: url(../images/ico/ico_liensexterne.png);}
+
+footer #friends a {
+	text-decoration: none;
+	display: block;
+}
+
+footer #friends a:link,
+footer #friends a:visited { color: #585858; }
+
+footer #friends a:hover { color: #ff5858; }
+
+footer #friends li:hover { list-style-image: url(../images/ico/ico_liensexterne1.png);}
+
+/*	Mention Légal  */
+footer #mentions {
+	font-size: 0.8em;
+	text-align: right;
+	padding-right: 1.2em;
+}
+
+footer #mentions a { text-decoration: none; }
+
+footer #mentions a:link,
+footer #mentions a:visited { color: #777; }
+
+footer #mentions a:hover { color: #45aa45; }
+
+/*	***********  */
+/*	 Tablettes	 */
+/*	***********  */
+@media screen and (min-width: 600px) {
+	footer #tweet,
+	footer #photos {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+	}
+
+	footer #viewtweet,
+	footer #viewphotos { display: block; }
+
+	footer #tweeth1,
+	footer #photoh1 { cursor: text; }
+
+	footer .photofooter { margin-right: 0.5em; }
+}
+
+/*	************  */
+/*	 Ordinateur   */
+/*	************  */
+@media screen and (min-width: 1024px) {
+	footer #friends {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	footer #friendsh1 { cursor: text; }
+
+	footer #viewfriends { display: block; }
+
+	footer #tweet,
+	footer #photos,
+	footer #friends { width: 33.33333333%; }
+
+	footer #friends ul {
+		/*margin: 0;*/
+		padding: 0;
+		padding-right: 1em;
+	}
+}
+

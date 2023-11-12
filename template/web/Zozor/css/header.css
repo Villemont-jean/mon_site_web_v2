@@ -1,0 +1,171 @@
+/*	******************	*/
+/*	 All Tel Portable	*/
+/*	******************	*/
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+	background-image: url('../images/ico/fond_jaune.png');
+}
+
+/*	Diposition en Bloc pour Portable  */
+header #haut_page { display: block; }
+
+
+/*	Mise en Page du Titre et du Logo  */
+header h1 {
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 5px;
+}
+
+header img,
+header h1 { display: inline-block; }
+
+header h2 {
+    font-family: 'Dayrom', serif;
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 0; 
+    font-weight: normal;
+}
+
+header h2 { padding-bottom: 0.2em; }
+
+/*	Disposition du Titre et du Boutton pour Portable  */
+header #logo,
+header #btn_menu {
+	display: inline-block;
+	vertical-align: top;
+}
+
+header #logo {
+	width: 75%;
+	height: auto;
+}
+
+header #btn_menu {
+	width: 25%;
+	height: auto;
+	margin-top: 1em;
+}
+
+/*	Présentation du boutton  */
+header #cadre {
+	width: 68px;
+	height: 68px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	background-color: rgba(90, 100, 90, 0.65);
+	border-radius: 100%;
+	cursor: pointer;
+
+	/*  transition: sur la rotation  */
+    -webkit-transition: transform 0.5s linear, background-color 0.8s ease-in-out; 
+            transition: transform 0.5s linear, background-color 0.8s ease-in-out;
+}
+
+header .trait {
+	display: inline-block;
+	width: 0.5em;
+	height: 2.8em;
+	background-color: rgba(200, 250, 200, 0.85);
+	border-radius: 2em;
+	margin-left: 0.6em;
+	margin-top: 0.6em;
+
+	/*  transition: sur le déplacement des traits  */
+    -webkit-transition: margin 0.8s ease-in-out, background-color 1.2s linear; 
+            transition: margin 0.8s ease-in-out, background-color 1.2s linear;
+}
+
+header .trait04 { background-color: #4554FF; }
+
+header #cadre:hover,
+header .actived {
+	/*  transform: rotate(degrès);  */
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+
+    background-color: rgba(90, 200, 20, 0.75);
+
+    border: 2px solid rgba(10, 150, 10, 0.85);
+}
+
+/*	Séparation de Haut de Page  */
+header { border-bottom: 2px solid black; }
+
+header #menu {
+    font-family: 'Dayrom', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*	la Navigation */
+header .inactive { display: none; }
+
+header #menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+header #menu li {
+	display: block;
+	margin: 0.5em;
+}
+
+header #menu a {
+	display: block;
+	text-decoration: none;
+	border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+header #menu a:link,
+header #menu a:visited { color: rgba(50, 70, 90, 0.85); }
+
+header #menu a:hover {
+	color: rgba(50, 195, 50, 0.75);
+	background-color: rgba(220, 220, 220, 0.15);
+	border-bottom: 3px solid rgba(50, 215, 50, 0.85);
+}
+
+header #menu #SelectMenu {
+	color: rgba(195, 20, 20, 0.85);
+	background-color: rgba(120, 120, 120, 0.15);
+	border-bottom: 3px solid rgba(215, 20, 20, 0.95);
+}
+
+/*	***********  */
+/*	 Tablettes	 */
+/*	***********  */
+@media screen and (min-width: 600px) {
+	/*	Haut de Page  */
+	header #btn_menu { display: none; }
+
+	header #menu { display: block; }
+
+	header #menu li {
+		display: inline-block;
+		width: 25%;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 0.5em;
+	}
+}
+
+/*	************  */
+/*	 Ordinateur   */
+/*	************  */
+@media screen and (min-width: 1024px) {
+	/*	Haut de Page  */
+	header #haut_page,
+	header #menu { display: inline-block; }
+
+	header #haut_page { width: 30%; }
+
+	header #menu {
+		width: 70%;
+		vertical-align: bottom;
+	}
+}
