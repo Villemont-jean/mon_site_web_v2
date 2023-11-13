@@ -257,7 +257,7 @@ $Viewer = new Viewer();
 
                             <!-- Affiche l'Image de dans la fenêtre Modal -->
                             <div id="insert-img">
-                                <a href="template/<?= $imgSelect -> getUrlTemp(); ?>" target="_blank" title="<?= $imgSelect -> getCaption(); ?>">
+                                <a href="<?= $imgSelect -> getUrlTemp(); ?>" target="_blank" title="<?= $imgSelect -> getCaption(); ?>">
                                     <img src="img/galery/<?= $imgSelect -> getUrlImg(); ?>.jpg" alt="<?= $imgSelect -> getAltImg(); ?>">
                                 </a>
                             </div>
